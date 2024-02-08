@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Martin Chang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Lightbox2 CSS -->
+	<link rel="stylesheet" href="assets/css/lightbox.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-rzOq3iEhAEnfjhCBGO+Y1W5Fqj/o1D9GN5Q5IcBMJXkF1uR+LJ1RQ4pM5HNa3OM" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Lightbox2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	</head>
+	<body class="is-preload">
+
+		<div id="overlay"></div>
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+				<a href="#" class="image avatar" onclick="toggleAvatarOverlay()">
+					<img src="images/avatar.jpg" alt="" />
+				</a>
+				<h1 ><strong>Reviewing Stuff!
+                    </strong> </h1>
+                    <br><p style="font-size:16px;" style="text-align: right;"> Hobbyist writer and aspring buzzfeed quiz maker tries reviewing stuff. How will this go? No one knows!</p>
+				</div>
+
+				<nav id="toc" class="toc">
+					<ul>
+						<li><a href="/vg.html">Video Games</a></li>
+						<li><a href="/kdrama.html">KDramas</a></li>
+						<li><a href="/anime.html">Anime/Manga</a></li>
+						<li><a href="/tv.html">TV/Movies</a></li>
+						<li><a href="/index.html">Back to Main Page</a></li>
+					</ul>
+				</nav>
+			</header>
+
+            <!-- Avatar Overlay -->
+<div id="avatar-overlay">
+    <div class="content-container">
+        <img src="images/avatar.jpg" alt="" />
+        <a href="#" class="close-button" onclick="toggleAvatarOverlay()"></a>
+        <div class="caption-container">
+            <div class="caption">Port Elgin '23</div>
+        </div>
+    </div>
+</div>
+
+<div id="main" style="max-width: 64em;">
+  <!-- One -->
+      <section id="intro">
+          <header class="major">
+              <h2><strong>Anime/Manga Reviews</strong></h2>
+          </header>
+          <p>
+              WIP
+          </p>
+      </section>  
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    function toggleAvatarOverlay() {
+      const overlay = document.getElementById('avatar-overlay');
+      overlay.classList.toggle('active');
+    }
+  
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const overlay = document.getElementById('avatar-overlay');
+        if (overlay.classList.contains('active')) {
+          toggleAvatarOverlay();
+        }
+      }
+    });
+  </script>
+
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel': 'Image %1 of %2',
+      'positionFromTop': 50,
+      'alwaysShowNavOnTouchDevices': true,
+      'disableScrolling': true,
+      'fitImagesInViewport': true,
+      'imageFadeDuration': 600,
+      'showImageNumberLabel': false, // Set to true if you want to display image numbers
+      'disableScrolling': true,
+      'caption': function(instance) {
+          return instance.alt + '<br> Caption: ' + instance.a.getAttribute('data-title');
+      }
+  });
+  </script>
+
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('resumeModal').style.display = 'block';
+      document.body.style.overflow = 'hidden'; /* Disable body scrolling */
+      document.documentElement.style.overflow = 'hidden'; /* Disable HTML scrolling */
+  
+      // Add click event listener to close modal when clicking outside the image
+      window.addEventListener('click', closeModalOutside);
+    }
+  
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('resumeModal').style.display = 'none';
+      document.body.style.overflow = ''; /* Enable body scrolling */
+      document.documentElement.style.overflow = ''; /* Enable HTML scrolling */
+  
+      // Remove the click event listener when closing the modal
+      window.removeEventListener('click', closeModalOutside);
+    }
+  
+    // Function to close the modal when clicking outside the image
+    function closeModalOutside(event) {
+      var modal = document.getElementById('resumeModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+  <script>
+    function adjustCaptionSize(image) {
+        var imageWidth = image.width;
+        var caption = image.closest('.lb-outerContainer').querySelector('.lb-caption');
+        caption.style.maxWidth = imageWidth + 'px';
+    }
+</script>
