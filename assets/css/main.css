@@ -3713,9 +3713,19 @@ ul.labeled-icons li h3 {
 		cursor: pointer;
 		font-size: 2rem;
 		transition: opacity 0.3s ease;
+	}
+	
+	.nav-button.prev-button .fa-arrow-alt-circle-left {
+		color: #797979; /* Change text color */
+		font-size: 24px;
+	}
+
+	.nav-button.next-button .fa-arrow-alt-circle-right {
+		color: #797979; /* Change text color */
+		font-size: 24px;
+	}
 
 	.section {
 		padding: 20px;
 		margin: 20px;
-	}
 	}
