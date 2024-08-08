@@ -807,13 +807,17 @@
                     </ul>
                   </div>
                 </div>
-                <!-- HITMAN woa -->
-                <div class="experience-item">
+                <!-- HITMAN woa ✅ -->
+                <div class="experience-item no-after">
                   <div class="header-info">
                     <div class="h4-container">
                       <h3>Hitman: World of Assassination (2016/2018/2021)</h3>
                       <span class="additional-text">PC</span>
                     </div>
+                    <h4>IO Interactive </h4>
+                    <button class="toggle-button">
+                      <i class="fas fa-chevron-down"></i>
+                    </button>
                   </div>
                   <div class="content">
                     <div class="image-container">
@@ -821,7 +825,7 @@
                     </div>
                     <ul>
                       <p>
-                        Hitman WoA is a very interesting set of games. I feel like a lot of people have misconceptions about this game, it's not exactly a stealth sim shooter like Splinter Cell or tells a thought-provoking story like MGS. This trilogy is very much a sandbox puzzle game with stealth elements and a loosely connected plot. This game does not require crazy mechanics or incredibly fast hands, it rewards patience, timing, creativity and map knowledge. In other words, a speedrunners paradise. And these games are hard. Like, I'm 99th+ percentile in the majority of maps or a bit better, and I feel like the difference between me and the people at the top is the same as the difference in skill between me and someone starting out, those guys are just that fucking good at the game and so creative, I'm jealous. <br><br>
+                        Hitman WoA is a very interesting set of games. I feel like a lot of people have misconceptions about this game, it's not exactly a stealth sim shooter like Splinter Cell or tells a thought-provoking story like MGS. This trilogy is very much a sandbox puzzle game with stealth elements and a loosely connected plot. This game does not require crazy mechanics or incredibly fast hands, it rewards patience, timing, creativity and map knowledge. In other words, a speedrunners paradise. And these games are hard to speedrun. Like, I'm 99th+ percentile in the majority of maps or a bit better, and I feel like the difference between me and the people at the top is the same as the difference in skill between me and someone starting out, those guys are just that fucking good at the game and so creative, I'm jealous. <br><br>
 
                         It's definitely not a game for everyone. But it's a series that I fell in love with, and I hope someone out there picks up these games and falls in love with it too. If you want to get a taste of what I was able to accomplish, you can check out some of my runs <a href="https://www.youtube.com/playlist?list=PLwRWJ0Yc9I85oWbNnzCGLjzGT1zJAKI_j" target= "_blank"> here. </a> <br><br>
 
@@ -913,6 +917,10 @@
                   <h3>Horizon Zero Dawn (2017)</h3>
                   <span class="additional-text">PS4/PC</span>
                 </div>
+                <h4>Guerrilla Games </h4>
+                <button class="toggle-button">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
               </div>
               <div class="content">
                 <div class="image-container">
@@ -940,6 +948,10 @@
                   <h3>Resident Evil 2: Remake (2019)</h3>
                   <span class="additional-text">PC</span>
                 </div>
+                <h4>Capcom </h4>
+                <button class="toggle-button">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
               </div>
               <div class="content">
                 <div class="image-container">
@@ -967,6 +979,10 @@
                   <h3>Persona 5/P5 Royal (2016/2021)</h3>
                   <span class="additional-text">PC/PS4</span>
                 </div>
+                <h4>Atlus </h4>
+                <button class="toggle-button">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
               </div>
               <div class="content">
                 <div class="image-container">
@@ -1132,7 +1148,26 @@
   });
 </script>
 
+<script>
+  function toggleAvatarOverlay() {
+    const overlay = document.getElementById('avatar-overlay');
+    overlay.classList.toggle('active');
+  }
+  
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+    const overlay = document.getElementById('avatar-overlay');
+    if (overlay.classList.contains('active')) {
+      toggleAvatarOverlay();
+    }
+    }
+  });
 
-
-
-
+  // Function to close the overlay when clicked
+  document.addEventListener('click', function(event) {
+    const overlay = document.getElementById('avatar-overlay');
+    if (event.target === overlay) {
+    toggleAvatarOverlay();
+    }
+  });
+</script>

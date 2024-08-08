@@ -1780,7 +1780,8 @@ input, select, textarea {
 		  .experience-item .content {
 			display: flex;
 			flex-direction: row; /* Adjust to a row layout */
-			margin-top: 1em; /* Add space between header info and content */
+			margin-top: -2em; /* Add space between header info and content */
+			margin-bottom: 0em;
 		  }
 		  
 		  .experience-item .content {
@@ -1839,8 +1840,19 @@ input, select, textarea {
 			height: 1px; /* Set the height of the line */
 			width: 100%; /* Set the width of the line to your desired width */
 			background-color: #ccc; /* Faint color for the line */
-			margin-top: -1em; /* Add space between the line and the next h3 */
+			margin-top: 2em; /* Add space between the line and the next h3 */
 			margin-bottom: 1em;
+		  }
+
+		  .experience-item.no-after {
+			margin-top: 2em; /* Adjust if necessary */
+			margin-bottom: 1em; /* Adjust if necessary */
+		}
+
+		  .experience-item.no-after::after {
+			content: none; /* Remove the content for this specific instance */
+			margin: 0;
+			height: 0;
 		  }
 		  
 		  .resume {
@@ -3695,7 +3707,7 @@ ul.labeled-icons li h3 {
 		cursor: pointer;
 		font-size: 1.5rem;
 		transition: transform 0.5s;
-		margin-bottom: 20px; /* Add margin to create space */
+		margin-bottom: 1em; /* Add margin to create space */
 	}
 	
 	.toggle-button i {
