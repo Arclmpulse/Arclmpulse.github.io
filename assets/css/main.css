@@ -1814,7 +1814,7 @@ input, select, textarea {
 		  .experience-item .h4-container {
 			display: flex;
 			justify-content: space-between; /* Align h4 and additional text to opposite ends */
-			margin-bottom: 25px;
+			margin-bottom: 1.25em;
 		  }
 		  
 		  .experience-item .additional-text {
@@ -3135,7 +3135,7 @@ ul.labeled-icons li h3 {
 
 		#main > section {
 			border-top: solid 2px #cfcfcf;
-			margin: 4em 0 0 0;
+			margin: 2em 0 0 0;
 			padding: 2em 0 0 0;
 		}
 
@@ -3470,9 +3470,9 @@ ul.labeled-icons li h3 {
 					margin-bottom: 0;
 				}
 			
-				#toc {
-					font-size: 0.85em;
-					top: -6.5em;
+				#toc a {
+					font-size: 0.75em;
+					top: -7.5%;
 				}
 
 		/* Footer */
@@ -3533,17 +3533,21 @@ ul.labeled-icons li h3 {
 			}
 
 				#header h1 {
-					font-size: 1.5em;
+					font-size: 1.4em;
 					top: -3em;
 				}
 
 					#header h1 br {
 						display: inline;
 					}
-				
+
 				#toc {
-					font-size: 1.25em;
-					top: -2em;
+					top: -2.5em;
+				}
+				
+				#toc a {
+					font-size: 1.2em;
+					margin: 0 0 0 0;
 				}
 
 		/* Footer */
@@ -3614,6 +3618,10 @@ ul.labeled-icons li h3 {
 			}
 
 			h3 {
+				font-size: 1em;
+			}
+
+			#toc {
 				font-size: 1em;
 			}
 
