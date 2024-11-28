@@ -3029,6 +3029,7 @@ ul.labeled-icons li h3 {
 			margin: 0;
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 500;
+			list-style: none;
 		}
 
 		#header .image.avatar {
