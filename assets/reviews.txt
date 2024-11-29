@@ -26,7 +26,6 @@ The Outer WorldsPC	--	70%	Show DetailsToggle PlayingEditDelete
 Wasteland 2: Director's CutPC	--	80%	Show DetailsToggle PlayingEditDelete
 Wasteland 3PC	--	75%	Show DetailsToggle PlayingEditDelete
 Hitman: AbsolutionPlayStation 3	--	55%	Show DetailsToggle PlayingEditDelete
-Hitman: Blood MoneyPlayStation 3	--	95%	Show DetailsToggle PlayingEditDelete
 BloodbornePlayStation 4	--	95%	Show DetailsToggle PlayingEditDelete
 Super Paper MarioWii	--	85%	Show DetailsToggle PlayingEditDelete
 Super Mario Galaxy 2Wii	--	90%	Show DetailsToggle PlayingEditDelete
