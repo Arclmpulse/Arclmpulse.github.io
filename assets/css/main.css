@@ -3072,17 +3072,28 @@ ul.labeled-icons li h3 {
 /* Footer */
 	#footer {
 		display: flex;
-		flex-direction: column; /* Ensure the content stacks vertically */
-		position:fixed;
+		flex-direction: column;
+		position: fixed;
+		bottom: 0; /* Pin the footer to the bottom of the viewport */
+		width: 100%; /* Ensure it spans the full width */
+		justify-content: flex-end; /* Push children to the bottom of the footer */
 	}
 
 	#footer .icons {
-		margin-top: 35%;
-		margin-bottom: 5%;
+		margin-top: 0; /* Remove conflicting margin */
+		margin-bottom: 5%; /* Ensure spacing from the bottom */
+		align-self: center; /* Center the icons horizontally */
 	}
 
 		#footer .icons a {
 			color: rgba(255, 255, 255, 0.4);
+		}
+
+		#footer .icons img {
+			max-width: 50px; /* Limit the maximum width */
+			max-height: 50px; /* Limit the maximum height */
+			width: auto; /* Ensure the aspect ratio is preserved */
+			height: auto; /* Ensure the aspect ratio is preserved */
 		}
 
 	#footer .copyright {
@@ -3567,7 +3578,7 @@ ul.labeled-icons li h3 {
 
 				#footer .icons {
 					margin: 0 0 1em 0;
-					bottom: 2em;
+					bottom: 6em;
 				}
 
 				#footer .copyright {
